@@ -26,15 +26,20 @@
     docker run --rm -it -p 5000:80 -p 2525:25 rnwood/smtp4dev
     ```
  - add your credential for those field taken from .env.example like email data
+ - To test : 
+ ```bash 
+ python manage.py test
+ ```
  - Run server : 
     ```bash 
         python manage.py runserver
     ``` 
- - test api. e.g. 
+ - request api using postman. e.g. 
     ![alt text](image-1.png)
  - During Api test To see email visit localhost:5000 . example is below
 
     ![mail response](image.png)
+    
 **API Specification:**  
 
 - **Endpoint:**  

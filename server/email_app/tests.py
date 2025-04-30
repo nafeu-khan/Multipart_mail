@@ -18,10 +18,10 @@ class SendEmailTests(APITestCase):
         url = reverse('send-selection-email')
         image = self.generate_image_file()
         payload = {
-            'name': 'John Doe',
+            'name': 'nafeu',
             'education': 'BSc in CSE',
-            'contact': '123456789',
-            'address': 'Somewhere in Earth',
+            'contact': '017656566656',
+            'address': 'Nowhere',
             'project_idea': 'A cool AI-based chatbot',
             'recipients': ['test@gmail.com', 'careers@accelx.net']
         }
@@ -39,9 +39,9 @@ class SendEmailTests(APITestCase):
         url = reverse('send-selection-email')
         image = self.generate_image_file()
         payload = {
-            'name': 'Jane Smith',
+            'name': 'error user',
             'education': 'BSc in Math',
-            'contact': '987654321',
+            'contact': '01987654321',
             'address': 'Nowhere',
             'project_idea': 'Automated grading system',
             'recipients': ['test@example.com']  
