@@ -5,7 +5,7 @@ import os
 
 def send_candidate_email(data, image):
     subject = f"Python Backend Engineer Selection Task - {data['name']}"
-    from_email = os.getenv('EMAIL_HOST_USER')
+    from_email = os.getenv('FROM_EMAIL_ADDRESS')
     to_emails = data['recipients']
 
     html_content = render_to_string("email_template.html", data)
