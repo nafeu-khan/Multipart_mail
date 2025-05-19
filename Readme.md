@@ -1,7 +1,7 @@
 ## Multipart Email API with Multiple Recipients & Embedded Image
 
 **Task Description:**  
- A Django REST Framework (DRF) API that sends an HTML email with an embedded image (uploaded as a file) using multiple email service providers. The email must include specific candidate information and be sent to a list of recipients: Gmail, Hotmail, Yahoo, and careers@accelx.net.
+ A Django REST Framework (DRF) API that sends an HTML email with an embedded image (uploaded as a file) using multiple email service providers. The email must include specific candidate information and be sent to a list of recipients: Gmail, Hotmail, Yahoo.
 
 **Setup Project:**
  - create .env file using 
@@ -83,7 +83,7 @@ Allowed recipients must be only from:
 ```
 {
   "status": "error",
-  "message": "Only Gmail, Hotmail, Yahoo, and careers@accelx.net are allowed"
+  "message": "Only Gmail, Hotmail, Yahoo are allowed"
 }
 ```
 
